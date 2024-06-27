@@ -6,8 +6,8 @@ import Link from "next/link";
 export const Overview = () => {
   return (
     <div
-      id="overviwe"
-      className="p-5 mt-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 md:px-24 md:py-52"
+      id="overview"
+      className="p-5 mt-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-400 md:px-24 md:py-48"
     >
       <div className="items-center md:grid md:grid-cols-2">
         <div>
@@ -24,9 +24,22 @@ export const Overview = () => {
           <div className="flex justify-start gap-4 my-10">
             {SocialNetwork.map(({ icon, id, name, url }) => (
               <Link href={url} target="_blank" key={id}>
-                <Image width={50} height={50} src={`/svg/${icon}.svg`} alt={name} />
+                <Image
+                  width={50}
+                  height={50}
+                  src={`/svg/${icon}.svg`}
+                  alt={name}
+                />
               </Link>
             ))}
+          </div>
+          <div >
+            <button className="px-4 py-3 md:m-4 mx-2  text-white bg-pink-400 rounded-lg" >
+              Empieza ya
+            </button>
+            <button className="px-4 py-3 md:m-4 text-white border-2 rounded-lg" >
+              Tengo un cupón
+            </button>
           </div>
         </div>
         <div>
