@@ -4,7 +4,7 @@ import { FooterData } from "./footer.data";
 export const Footer = () => {
   return (
     <footer className="p-5 mt-10 text-white bg-blue-950 md:px-20 md:py-10">
-      <div className="grid md:grid-cols-[450px_1fr_1fr_1fr] md:gap-10">
+      <div className="grid md:grid-cols-[450px_1fr_1fr_1fr] items-center md:gap-10 ">
         <div>
           <Image src="/assets/logo.png" alt="log" width={200} height={400} />
           <p className="mt-2 text-center">
