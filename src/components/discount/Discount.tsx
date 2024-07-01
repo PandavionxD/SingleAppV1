@@ -1,0 +1,27 @@
+import Image from "next/image"
+import { TransitionMotion } from "../motion/transitionMotion"
+
+export const Discount = () => {
+  return (
+    <TransitionMotion>
+        <div className="grid items-center px-5 py-10 md:grid-cols-2 md:p-20 rounded-3xl bg-gradient-to-r from-violet-500 to-fuchsia-500" >
+        <div >
+            <h2 className="text-3xl text-white font-extrabold  md:text-5xl">
+            Puedes practicar en cualquier momento que te convenga
+            </h2>
+            <p className="my-10 text-white">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button className="px-8 py-3 text-white bg-pink-400 rounded-xl"   >
+                Tengo un cupón
+            </button>
+        </div>
+        <div>
+            <Image src="/assets/discount.png" alt="Discount-image" width={350} height={350}
+            className="mx-auto"
+            />
+        </div>
+        </div>
+    </TransitionMotion>
+  )
+}

@@ -1,4 +1,4 @@
-import { Features, Navbar, Overview } from "@/components";
+import { About, Discount, Features, Navbar, Overview, Plans, Practice } from "@/components";
 
 export default function Home() {
   return (
@@ -6,6 +6,12 @@ export default function Home() {
       <Navbar/>
       <Overview/>
       <Features/>
+      <div className="max-w-6xl m-auto ">
+        <About/>
+        <Practice/>
+        <Plans/>
+        <Discount/>
+      </div>
     </main>
   );
 }
