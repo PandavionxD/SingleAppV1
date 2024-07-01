@@ -16,15 +16,20 @@ export const Features = () => {
         </h2>
       </div>
       {FeaturesData.map(({ id, image, text, aditionalClass }) => (
-        <TransitionMotion>
-        <div key={id}>
-          <div className={`${aditionalClass} rounded-3xl shadow-lg p-6 shadow-pink-100`}>
-            <Image src={`/assets/${image}.png`} alt={`Image ${text}`} width={100} height={100} />
-            <h3 className="mt-3 mr-20 text-2xl font-bold" >
-              {text}
-            </h3>
+        <TransitionMotion key={id}>
+          <div>
+            <div
+              className={`${aditionalClass} rounded-3xl shadow-lg p-6 shadow-pink-100`}
+            >
+              <Image
+                src={`/assets/${image}.png`}
+                alt={`Image ${text}`}
+                width={100}
+                height={100}
+              />
+              <h3 className="mt-3 mr-20 text-2xl font-bold">{text}</h3>
+            </div>
           </div>
-        </div>
         </TransitionMotion>
       ))}
     </div>
